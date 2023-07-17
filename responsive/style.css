@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width:100%;
+
+}
+
+#left{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    background-color: rgb(217, 252, 248);
+}
+
+#left #textcenter {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+    
+}
+
+#textcenter h1{
+    font-size: 80px;
+    margin-bottom: 20px
+}
+
+#textcenter p{
+    opacity: 0.9;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 20px
+}
+
+#textcenter a{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+#left #lnav{
+    display:flex;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: space-between;
+
+}
+
+#lnavn a{
+   margin-right: 20px;
+   text-decoration: none;
+
+}
+
+#lnavn i{
+   color: royalblue;
+ 
+ }
+
+#right{
+    height: 100%;
+    width: 60%;
+    
+}
+
+#right #topright{
+    display: flex;
+    height:50%;
+    width: 100%;
+}
+
+#right #topright #right1{
+    height:100%;
+    width: 55%;
+    margin-right: 1px;
+    background-image: url(https://cdn.discordapp.com/attachments/990816889657778196/1130490759137726582/Blaxx_ad_for_a_hiring_job_administrative_office_worker_copywrit_4191deac-b6e4-4bdb-ac57-95d72bafdbdd.png);
+    background-position: top;
+    background-size: cover;
+}
+
+#right #topright #right2{
+    height:100%;
+    width: 45%;
+    margin-left: 1px;
+    background-image: url(https://cdn.discordapp.com/attachments/990816889657778196/1130486317684371486/victorien13320_A_soccer_stadium_with_motorcyclists_in_place_of__415b8d05-5625-4f12-ab42-de30456eae0b.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#right #bottomright{
+    height: 50%;
+    width: 100%;
+    background-image:url(https://cdn.discordapp.com/attachments/990816889657778196/1130491098263986196/mhanna._7_books_watercolor_style_childrens_book_style_21996cf4-fb7b-4b1d-9fa9-74895b3c4140.png);
+    background-position: center;
+    background-size: cover;
+    /* background-color: rgb(50, 12, 12); */
+}
+
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+
+    #main #left{
+        width:100%
+    }
+    
+    #main #right{
+        width:100%
+    }
+}
