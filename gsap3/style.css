@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(344, 95%, 78%);
+    overflow: hidden;
+}
+
+#nav{
+    position: absolute;
+    margin-top: 2%;
+    width: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1000;
+}
+
+#nav img{
+    position: relative;
+    left: 5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#nav h1{
+    font-size: 24px;
+    font-weight: 540;
+    letter-spacing: -2%;
+   font-family: gilroy;
+}
+
+#part1{
+    height: 100%;
+    width: 24%;
+}
+
+#part2{
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+}
+#part3{
+    height: 100%;
+    width: 16%;
+}
+
+
+#part2 img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#part2a img{
+    position: absolute;
+    border-radius: 2%;
+    border-top-right-radius: 20%;
+    border-bottom: 0.4px solid rgb(11, 11, 10);
+    border-left:12px solid hsl(343, 100%, 92%);;
+    object-fit: cover;
+    right: 4%;
+    top:12%;
+    height: 380px;
+    width: 320px;
+}
+
+#text-div{
+    height: 400px;
+    position: absolute;
+    padding: 0px 12px;
+    width: 480px;
+    background-color: aliceblue;
+    left: 6%;
+    top:55%;
+    transform: translate(0,-50%);
+}
+
+#text-div h1{
+    font-size: 64px;
+    margin-top: 1%;
+    font-family: monument;
+    text-transform: uppercase;
+
+}
+
+#vertical-text{
+    position: absolute;
+    transform: rotate(90deg);
+    right: -16%;
+    top: 14%;
+    z-index: 99;
+}
+
+#vertical-text h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 800;
+    color: transparent;
+    /* right: 5%; */
+    letter-spacing: 8px;
+    font-family: monument;
+    -webkit-text-stroke-width:3px ;
+    -webkit-text-stroke-color: black;
+}
