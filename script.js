@@ -16,6 +16,20 @@ tl.from("#main h1",{
 
 })
 
+// tl.from("#page2 #box" ,{
+//     scale:0,
+//     duration:1,
+//     rotate:360,
+//     scrollTrigger:{
+//         trigger:'#page2 #box',
+//         scroller:"body",
+//         markers:true,
+//         start:"top 60%",
+//         end:"top 30%",
+//         scrub:2
+//     }
+// })
+
 tl.from("#main >img",{
     scale:0.2,
     opacity:0,
