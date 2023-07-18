@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    min-height: 100vh;
+    width: 100%;
+}
+
+#main #top{
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    width: 100%;
+    background-image: url(https://cdn.discordapp.com/attachments/990816889657778196/1130666092176605224/JaketheHuman_the_original_lost_civilization_that_built_the_pyra_12c582bd-3b1d-4fa3-b6cf-436b5c684e60.png);
+    background-size: cover;
+    background-position: 0% 72%;
+    color: rgb(254, 254, 253);
+}
+
+#overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgb(0, 0, 0,0.2);
+}
+
+#texthead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+    padding: 0 10vw;
+}
+
+#top #left h1{
+    font-size: 40px;
+    font-weight: 450;
+    display: flex;
+    align-items: center;
+}
+
+#top #right{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;   
+}
+
+#top #right p{
+    font-size: 14px;
+    width: 30%;
+}
+
+#main #bottom {
+    display: flex;
+    min-height: 50vh;
+    width: 100%;
+}
+
+#main #bottom #p1{
+    background-color: rgb(255, 247, 188);
+    min-height:inherit;
+    width: 25%;
+}
+
+#main #bottom #p1 #text{
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height:inherit;
+    background-color: rgb(255, 247, 188);
+}
+
+#main #bottom #p1 #text p{
+   margin-top: 20px;
+}
+
+#main #bottom #p1 #text #icons{
+   margin-left: 20px;
+    margin-top: 200px;
+ }
+
+
+#main #bottom #p2{
+    min-height:inherit;
+    width: 25%;
+    background-image: url(https://cdn.discordapp.com/attachments/990816889657778196/1130665174391591003/faridmansor_malaysia_fireman_team_marvel_poster_real_photo_8k_r_58723e0a-5688-43f4-8fb2-25237f7f8ff8.png);
+    background-size: cover;
+    border: 1px solid rgb(0, 0, 0);
+}
+#main #bottom #p3{
+    min-height:inherit;
+    width: 25%;
+}
+
+#main #bottom #p3 #a{
+    background-color: rgb(113, 1, 1);
+    color: whitesmoke;
+    min-height: 20vh;
+    width: 100%;
+}
+
+#main #bottom #p3 #a #copy{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   gap: 20px;
+   padding: 2vw;
+   
+}
+
+#main #bottom #p3 #b{
+    min-height: 30vh;
+    width: 100%;
+    background-image: url(https://cdn.discordapp.com/attachments/990816889657778196/1130660576973049906/faridmansor_Fireman_malaysia_flood_boat_saving_people_real_phot_ba6d5db1-c450-4b30-b21f-fcf5ad1b636a.png);
+    background-size: cover;
+}
+
+#main #bottom #p4{
+    background-color: black;
+    min-height:inherit;
+    width: 25%;
+}
+
+#main #bottom #p4 #chat{
+    padding: 2vw;
+}
+
+#main #bottom #p4 h1{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: aliceblue ;
+}
+
+#content1,#content2{
+    display: flex;
+    padding: 20px;
+    gap: 12px;
+    align-items: center;  
+}
+
+#content1 #text, #content2 #text{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+#content1 #text h2, #content2 #text h2{
+   font-size: 12px;
+   font-weight: 400;
+   margin-top: 8px;
+   opacity: 0.8;
+}
+
+#content1 #text p, #content2 #text p{
+    font-size: 14px;
+    font-weight: 600;
+ }
+ 
+#content1 img{
+height: 50px;
+width: 90px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+#content2 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+
+@media(max-width:500px) {
+    #overlay #texthead{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #overlay #texthead #right{
+    flex-direction: column;
+    }
+
+    #overlay #texthead #right p {
+        width:initial ;
+        margin-top: 20px;
+    }
+    #overlay #texthead #right #ico {
+        margin-top: 30px;
+    }
+
+    #bottom{
+        flex-direction: column;
+    }
+
+    #main #bottom #p1 {
+        width: 100%;
+        min-height: 50%;
+    }
+    #main #bottom #p2{
+        width: 100%;
+    }
+    #main #bottom #p3 {
+        width: 100%;
+    }
+    #main #bottom #p4 {
+        width: 100%;
+    }
+}
+
